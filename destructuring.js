@@ -73,7 +73,14 @@ function totalPopulation (obj){
 
 //Code Here
 
-
+function ingredients(obj){
+  var arr = [];
+var {carb,fat,protein} = obj;
+  arr.push(carb);
+  arr.push(fat);
+  arr.push(protein)
+  return arr;
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -91,7 +98,16 @@ function totalPopulation (obj){
 
 //Code Here
 
-
+function largeNumbers({first,second,third}){
+  
+  if(first < second && first < third){
+    return first
+  }else if (second < first && second < third){
+    return second
+  } else{
+    return third;
+  }
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -103,4 +119,13 @@ function totalPopulation (obj){
 
 //Code Here
 
+function numberGroups({a,b,c}){
+  if(a.length > b.length && a.length > c.length){
+    return a;
+  }else if(b.length > a.length && b.length > c.length){
+    return b;
+  }else{
+    return c;
+  }
+}
 
